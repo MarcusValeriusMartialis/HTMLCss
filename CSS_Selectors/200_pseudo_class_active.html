@@ -1,0 +1,40 @@
+<!--
+Definition and Usage
+
+The :active selector is used to select and style the active link.
+
+A link becomes active when you click on it.
+
+Tip: The :active selector can be used on all elements, not only links.
+
+Tip: Use the :link selector to style links to unvisited pages, 
+the :visited selector to style links to visited pages, and 
+the :hover selector to style links when you mouse over them.
+
+
+The selector CSS :active, selects the element that is in an active state. 
+The active state of an element begins at the moment when the user clicks the mouse button, 
+and the moment the user releases the mouse click button.
+
+
+Note: :active MUST come after :hover (if present) in the CSS definition in order to be effective!   
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:active {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<a href="https://www.lemonde.fr">lemonde.fr</a>
+<a href="http://www.wikipedia.org">wikipedia.org</a>
+
+<p><b>Note:</b> The :active selector styles the active link.</p>
+
+</body>
+</html>

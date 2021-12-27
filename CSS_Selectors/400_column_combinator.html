@@ -1,0 +1,34 @@
+<!--
+ Column combinator (||)
+
+The column combinator, which consists of two pipes (||) 
+represents the relationship of a column element to a cell element belonging to the column it represents. 
+Column membership is determined based on the semantics of the document language only: 
+whether and how the elements are presented is not considered. 
+
+If a cell element belongs to more than one column, 
+it is represented by a selector indicating membership in any of those columns.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+col.selected || td {
+  background: red;
+  color: white;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <col span="2">
+  <col class="selected">
+  <tr><td>A <td>B <td>C
+  <tr><td colspan="2">D <td>E
+  <tr><td>F <td colspan="2">G
+</table>
+
+</body>
+</html>

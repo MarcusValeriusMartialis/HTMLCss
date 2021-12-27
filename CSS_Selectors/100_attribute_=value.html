@@ -1,0 +1,32 @@
+<!--
+Definition and Usage
+
+The [attribute|=value] selector is used to select elements with the specified attribute starting with the specified value.
+
+Note: The value has to be a whole word, either alone, like lang="en", 
+or followed by a hyphen( - ), like lang="en-us".
+
+CSS Syntax
+[attribute |= value] {
+  css declarations;
+} 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[lang|=en] {
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<p lang="us">Hi!</p>
+<p lang="no">Hei!</p>
+
+</body>
+</html>

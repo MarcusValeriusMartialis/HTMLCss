@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+Definition and Usage
+
+An outline is a line that is drawn around elements, outside the borders, to make the element "stand out".
+
+The outline property is a shorthand property for:
+
+    outline-width
+    outline-style (required)
+    outline-color
+
+If outline-color is omitted, the color applied will be the color of the text.
+
+Note: Outlines differ from borders! 
+Unlike border, the outline is drawn outside the element's border, and may overlap other content. 
+Also, the outline is NOT a part of the element's dimensions; 
+the element's total width and height is not affected by the width of the outline.
+-->
+<style>
+p {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Outline</h2>
+<p>This element has a 2px black border and a green outline with a width of 10px.</p>
+
+</body>
+</html>

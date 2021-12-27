@@ -1,0 +1,83 @@
+<!--
+Definition and Usage
+
+The element1~element2 selector matches occurrences of element2 that are preceded by element1.
+
+Both elements must have the same parent, but element2 does not have to be immediately preceded by element1.
+
+CSS Syntax
+element ~ element {
+  css declarations;
+} 
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style> 
+
+p ~ ul {
+
+  background: #ff0000;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+​
+
+<div>A div element.</div>
+
+<ul>
+
+  <li>Coffee</li>
+
+  <li>Tea</li>
+
+  <li>Milk</li>
+
+</ul>
+
+​
+
+<p>The first paragraph.</p>
+
+<ul>
+
+  <li>Coffee</li>
+
+  <li>Tea</li>
+
+  <li>Milk</li>
+
+</ul>
+
+​
+
+<h2>Another list</h2>
+
+<ul>
+
+  <li>Coffee</li>
+
+  <li>Tea</li>
+
+  <li>Milk</li>
+
+</ul>
+
+​
+
+</body>
+
+</html>
+
+​
+
